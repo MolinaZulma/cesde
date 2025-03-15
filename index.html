@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cursos CesdeDocument</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestión de Cursos Cesde</h1>
+
+      <div class="filtros">
+        <h2>Filtros de Búsqueda</h2>
+
+        <div class="filtro">
+          <label for="nombreBusqueda">Nombre del Curso:</label>
+          <input type="text" id="nombreBusqueda">
+          <button onclick="filtrarPorNombre()">Buscar</button>
+        </div>
+
+        <div class="filtro">
+          <label for="duracionMinima">Duración Mínima (semanas):</label>
+          <input type="number" id="duracionMinima">
+          <button onclick="filtrarPorDuracion()">Buscar</button>
+        </div>
+
+        <div class="filtro">
+          <label for="precioMaximo">Precio Máximo:</label>
+          <input type="number" id="precioMaximo">
+          <button onclick="filtrarPorPrecio()">Buscar</button>
+        </div>
+      </div>
+
+      <div id="resultados">
+        <h2>Resultados de la Búsqueda</h2>
+        <ul id="listaCursos"></ul>
+      </div>
+      <script src="configFi.js"></script>
+
+    
+</body>
+</html>
